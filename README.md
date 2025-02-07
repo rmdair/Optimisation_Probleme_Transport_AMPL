@@ -32,12 +32,12 @@ Le rapport présente une analyse approfondie du problème, avec :
 
 ## Code et Modélisation  
 Le projet est structuré en plusieurs fichiers :
-- **`probleme_transport_partie1.mod`** : Modèle AMPL de base avec les dépôts initiaux.
-- **`probleme_transport_partie1.dat`** : Données associées aux coûts de transport, capacités, demandes et préférences des clients.
-- **`probleme_transport_partie1.run`** : Commandes pour résoudre le modèle avec CPLEX.
-- **`probleme_transport_partie2.mod`** : Modèle AMPL intégrant les nouvelles options de dépôts.
-- **`probleme_transport_partie2.dat`** : Données mises à jour incluant les coûts d’ouverture, de fermeture et d'extension de dépôts.
-- **`probleme_transport_partie2.run`** : Exécution de la simulation avec le solveur.
+- **`probleme_transport_partie1.mod`** : Modèle AMPL de base avec les dépôts initiaux. [lien ici](./data/probleme_transport_partie1.mod)
+- **`probleme_transport_partie1.dat`** : Données associées aux coûts de transport, capacités, demandes et préférences des clients. [lien ici](./data/probleme_transport_partie1.dat)
+- **`probleme_transport_partie1.run`** : Commandes pour résoudre le modèle avec CPLEX. [lien ici](./data/probleme_transport_partie1.run)
+- **`probleme_transport_partie2.mod`** : Modèle AMPL intégrant les nouvelles options de dépôts. [lien ici](./data/probleme_transport_partie2.mod)
+- **`probleme_transport_partie2.dat`** : Données mises à jour incluant les coûts d’ouverture, de fermeture et d'extension de dépôts. [lien ici](./data/probleme_transport_partie2.dat)
+- **`probleme_transport_partie2.run`** : Exécution de la simulation avec le solveur. [lien ici](./data/probleme_transport_partie22.run)
 
 ## Références  
 - AMPL Documentation officielle - *A Modeling Language for Mathematical Programming*  
