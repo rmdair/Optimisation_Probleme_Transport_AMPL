@@ -1,4 +1,5 @@
 #### Fichier probleme_transport_partie1.run ####
+
 reset;
 model ../nomrepertoire/probleme_transport_partie1.mod;
 data ../nomrepertoire/probleme_transport_partie1.dat;
