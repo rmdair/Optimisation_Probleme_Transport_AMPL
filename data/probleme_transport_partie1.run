@@ -1,7 +1,8 @@
 #### Fichier probleme_transport_partie1.run ####
 reset;
-model ../monampl/probleme_transport_partie1.mod;
-data ../monampl/probleme_transport_partie1.dat;
+model ../nomrepertoire/probleme_transport_partie1.mod;
+data ../nomrepertoire/probleme_transport_partie1.dat;
+
 option solver cplex;
 solve;
 display quantite_UC; display quantite_UD; display quantite_DC;
