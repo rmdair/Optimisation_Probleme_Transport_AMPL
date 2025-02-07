@@ -1,0 +1,10 @@
+#### Fichier probleme_transport_partie2.run ####
+reset;
+model ../monampl/probleme_transport_partie2.mod;
+data ../monampl/probleme_transport_partie2.dat;
+option solver cplex;
+solve;
+
+display decision_Stutt, decision_Dort, decision_Leip, decision_Duss, decision_Franc;
+display quantite_UC; display quantite_UD; display quantite_DC;
+display cout_total_avec_changement_depots;
