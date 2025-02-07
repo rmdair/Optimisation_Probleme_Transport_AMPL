@@ -1,4 +1,5 @@
 #### Fichier probleme_transport_partie2.dat ####
+
 set CLIENTS := C1 C2 C3 C4 C5 C6;
 set DEPOTS := Hambourg Francfort Dusseldorf Leipzig Stuttgart Dortmund;
 set USINES := Berlin Munich;
