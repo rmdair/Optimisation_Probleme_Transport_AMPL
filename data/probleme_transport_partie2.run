@@ -1,7 +1,7 @@
 #### Fichier probleme_transport_partie2.run ####
 reset;
-model ../monampl/probleme_transport_partie2.mod;
-data ../monampl/probleme_transport_partie2.dat;
+model ../nomrepertoire/probleme_transport_partie2.mod;
+data ../nomrepertoire/probleme_transport_partie2.dat;
 option solver cplex;
 solve;
 
