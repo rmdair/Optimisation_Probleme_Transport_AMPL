@@ -1,6 +1,7 @@
-# Optimisation d’un Problème de Transport avec AMPL
+<div align="center">
+  <h1>Optimisation d’un Problème de Transport avec AMPL</h1>
+</div>
 
-## Présentation  
 Dans un contexte où la logistique est un enjeu stratégique pour les entreprises, l’optimisation des coûts de transport devient un levier essentiel pour améliorer la rentabilité et l’efficacité des flux de distribution. Ce projet propose une modélisation détaillée d’un problème de transport à l’aide du langage **AMPL**, avec plusieurs scénarios d’optimisation pour une entreprise allemande cherchant à approvisionner ses clients tout en minimisant ses coûts.
 
 ## Le Langage AMPL  
@@ -21,11 +22,9 @@ L’étude explore différentes approches d’optimisation, incluant :
 
 ## Contenu du Rapport  
 Le rapport présente une analyse approfondie du problème, avec :
-- **La formulation mathématique complète sous AMPL**.
-- **Une étude comparative des différentes stratégies logistiques**.
-- **Les résultats des simulations**, illustrés par des tableaux et diagrammes de flux.
-- **L'impact des contraintes de préférences clients** sur les coûts optimaux.
-- **L’analyse des gains potentiels d’une réorganisation des dépôts**.
+- La **formulation mathématique** complète sous AMPL.
+- Les **résultats des simulations**, illustrés par des tableaux et diagrammes de flux.
+- Les **interprétations** sur les différentes stratégies logistiques.
 
 **Consulter le rapport complet :**  
 ➡️ [Optimisation du Problème de Transport (PDF)](./Optimisation_Probleme_Transport.pdf)
