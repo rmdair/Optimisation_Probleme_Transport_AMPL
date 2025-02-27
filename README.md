@@ -30,7 +30,7 @@ Le rapport présente une analyse approfondie du problème, avec :
 ➡️ [Optimisation du Problème de Transport (PDF)](./Optimisation_Probleme_Transport.pdf)
 
 ## Code et Modélisation  
-Le projet est structuré en plusieurs fichiers (accessibles via [ce lien](data/)) :
+Le projet est structuré en plusieurs fichiers (accessibles via [ce lien](src/)) :
 - **`probleme_transport_partie1.mod`** : Modèle AMPL de base avec les dépôts initiaux.
 - **`probleme_transport_partie1.dat`** : Données associées aux coûts de transport, capacités, demandes et préférences des clients. 
 - **`probleme_transport_partie1.run`** : Commandes pour résoudre le modèle avec CPLEX. 
