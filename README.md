@@ -26,7 +26,7 @@ Le rapport présente une analyse approfondie du problème, avec :
 - Les **résultats des simulations**, illustrés par des tableaux et diagrammes de flux.
 - Les **interprétations** sur les différentes stratégies logistiques.
 
-**Consulter le rapport complet :**  
+**Consulter le rapport :**  
 ➡️ [Optimisation du Problème de Transport (PDF)](./Optimisation_Probleme_Transport.pdf)
 
 ## Code et Modélisation  
@@ -37,6 +37,8 @@ Le projet est structuré en plusieurs fichiers (accessibles via [ce lien](src/))
 - **`probleme_transport_partie2.mod`** : Modèle AMPL intégrant les nouvelles options de dépôts. 
 - **`probleme_transport_partie2.dat`** : Données mises à jour incluant les coûts d’ouverture, de fermeture et d'extension de dépôts.
 - **`probleme_transport_partie2.run`** : Exécution de la simulation avec le solveur. 
+
+---
 
 ## Références  
 - AMPL Documentation officielle - *A Modeling Language for Mathematical Programming*  
