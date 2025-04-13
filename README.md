@@ -36,8 +36,10 @@ Le projet est structuré en plusieurs fichiers (accessibles via [ce lien](src/))
 - **`probleme_transport_partie1.run`** : Commandes pour résoudre le modèle avec CPLEX. 
 - **`probleme_transport_partie2.mod`** : Modèle AMPL intégrant les nouvelles options de dépôts. 
 - **`probleme_transport_partie2.dat`** : Données mises à jour incluant les coûts d’ouverture, de fermeture et d'extension de dépôts.
-- **`probleme_transport_partie2.run`** : Exécution de la simulation avec le solveur. 
+- **`probleme_transport_partie2.run`** : Exécution de la simulation avec le solveur.
+
 Les données utilisées dans ce projet ne proviennent pas d’un cas réel d’entreprise. Elles ont été générées de manière fictive mais cohérente, en s’appuyant sur des critères logistiques crédibles tels que les distances géographiques entre villes allemandes, des estimations réalistes de capacités, etc.
+
 ---
 
 ## Références  
