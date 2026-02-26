@@ -58,26 +58,29 @@ Consulter le rapport :
 Le modèle est formulé comme un problème de transport multi-étapes. L'objectif est de minimiser le coût total de distribution tout en respectant les capacités logistiques et les demandes clients.
 
 ### Fonction Objectif
+
 L'objectif est de minimiser la fonction $Z$ représentant la somme des coûts sur les trois types de routes possibles (Usine $\to$ Client, Usine $\to$ Dépôt, Dépôt $\to$ Client) :
 
-$$\begin{aligned}
-\min Z = & \sum_{u \in U} \sum_{c \in C} \text{prix\_route}_{uc} \cdot \text{quantite\_UC}_{uc} \\
-& + \sum_{u \in U} \sum_{d \in D} \text{prix\_route}_{ud} \cdot \text{quantite\_UD}_{ud} \\
-& + \sum_{d \in D} \sum_{c \in C} \text{prix\_route}_{dc} \cdot \text{quantite\_DC}_{dc}
-\end{aligned}$$
+$$
+\begin{aligned}
+\min Z = \sum_{u \in U} \sum_{c \in C} X_{uc} C_{uc} + \sum_{u \in U} \sum_{d \in D} X_{ud} C_{ud} + \sum_{d \in D} \sum_{c \in C} X_{dc} C_{dc}
+\end{aligned}
+$$
 
-> Chaque variable $\text{quantite\_XY}_{xy}$ représente le **flux de marchandises** (en tonnes) acheminé d'un point $x \in X$ à un point $y \in Y$. Le modèle minimise ainsi le coût global en optimisant la répartition des flux sur l'ensemble du réseau.
-
+Où :
+* $X_{ij}$ : Quantité transportée entre le point $i$ et le point $j$ (en tonnes).
+* $C_{ij}$ : Coût unitaire de transport sur l'arc $(i, j)$ (en euros/tonne).
+ 
 ### Contraintes Principales
 
-* **Capacité des Usines ($U$) :** Le flux total sortant ne doit pas dépasser la capacité d'accueil/production.
-    $$\sum_{c \in C} \text{quantite\_UC}_{uc} + \sum_{d \in D} \text{quantite\_UD}_{ud} \le \text{capacite\_accueil}_u, \quad \forall u \in U$$
+* **Capacité des Usines ($U$) :** Le flux total sortant ne doit pas dépasser la capacité de production.
+$$\sum_{c \in C} X_{uc} + \sum_{d \in D} X_{ud} \le \text{capa}_u, \quad \forall u \in U$$
 
 * **Conservation des Flux (Dépôts $D$) :** Tout ce qui entre dans un dépôt doit en ressortir.
-    $$\sum_{u \in U} \text{quantite\_UD}_{ud} = \sum_{c \in C} \text{quantite\_DC}_{dc}, \quad \forall d \in D$$
+$$\sum_{u \in U} X_{ud} = \sum_{c \in C} X_{dc}, \quad \forall d \in D$$
 
 * **Satisfaction de la Demande (Clients $C$) :** La somme des livraisons directes et via dépôts doit égaler le besoin du client.
-    $$\sum_{u \in U} \text{quantite\_UC}_{uc} + \sum_{d \in D} \text{quantite\_DC}_{dc} = \text{besoin\_client}_c, \quad \forall c \in C$$
+$$\sum_{u \in U} X_{uc} + \sum_{d \in D} X_{dc} = \text{besoin}_c, \quad \forall c \in C$$
 
 &nbsp;
 
