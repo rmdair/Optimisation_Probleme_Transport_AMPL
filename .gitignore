@@ -1,0 +1,18 @@
+# --- AMPL & Solveurs
+cplex.log
+*.sol
+*.out
+
+# --- Système & IDE 
+.DS_Store
+Thumbs.db
+.vscode/
+
+# --- LaTeX (compilation locale) 
+*.aux
+*.log
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+indent.log
